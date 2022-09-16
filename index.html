@@ -1,9 +1,11 @@
+
 <style>
     
     h1{
         color : blue;
         cursor : pointer;
         transition: .2s;
+    
     }
     h1:hover{
         color: green;
@@ -25,15 +27,29 @@
         opacity: 100%;
         box-shadow: 1px 1px 4px;
     }
+    .tombol{
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
     
 </style>
 
 <html>
-    <title>Hello World</title>
+ 
+ <body align="center">
+    
+    
+
     <h1>Hello World</h1>
     <br>
     <img src="foto.jpg" alt="">
-    <table>
+    <table align="center">
         <tr>
             <td>Nama </td>
             <td>:</td>
@@ -54,6 +70,10 @@
         </tr>
     </table>
     <br>
-    <input type=button onClick="location.href='p03/index.html'"
-    value='My Top 10 Best Friends'>
-</html>
+    <table align="center">
+        <td><a href="P03/index.html" class="tombol" onclick="alert('Hello, ini adalah Javasript')">My Top 10 Best Friends</a></td>
+        <td><a href="P03css/index.html" class="tombol" onclick="alert('Hello, ini adalah Javasript')">My Top 10 Best Friends</a></td>
+    </table>
+</body> 
+    </html>
+
