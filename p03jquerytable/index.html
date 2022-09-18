@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>HTML TABLE JQUERY</title>
+</head>
+<h2><center>The Top 5 Bestie</center></h2>
+<body>
+<table>
+  <tr>
+    <th class="NIM">NIM</th>
+    <th class="Nama">NAMA</th>
+    <th class="Alamat">PRODI / KELAS</th>
+    <th class= "Aksi">AKSI</th>
+  </tr>
+  <tr>
+    <td class="text">41215312</td>
+    <td class="text">Rifqi Fathin Hidayat</td>
+    <td class="text">TI-2021-S</td>
+     <td class="text" class="Hapus">Delete</td>
+  </tr>
+  <tr>
+    <td class="text">41215863</td>
+    <td class="text">Arisa</td>
+    <td class="text">TI-2021-S</td>
+    <td class="text">Delete</td>
+  </tr>
+  <tr>
+    <td class="text">41215306</td>
+    <td class="text">Mochamad Fathurohim</td>
+    <td class="text">TI-2021-S</td>
+     <td class="text">Delete</td>
+  </tr>
+  <tr>
+    <td class="text">41215294</td>
+    <td class="text">Arya Nuryana</td>
+    <td class="text">TI-2021-S</td>
+    <td class="text">Delete</td>
+  </tr>
+  <tr>
+    <td class="text">41215312</td>
+    <td class="text">Agesty Kusmiyaty</td>
+    <td class="text">TI-2021-S</td>
+    <td class="text">Delete</td>
+  </tr>
+
+</table>
+
+
+
+  <div class="tombol-kembali">
+      <a onclick="alert('Kamu mau kembali?')" href="../index.html"
+        >Back to Home</a
+      >
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+ $(document).ready(function(){ $('.text').click(function(){ 
+  let text = $(this).text();
+  alert(`Anda mengklik text yang berisi text "${text}"`);
+   if(text!='Delete'){ 
+    let text2 = prompt('Mau diubah?:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+</script>
+
+</body>
+</html>
