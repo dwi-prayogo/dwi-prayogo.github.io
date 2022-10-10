@@ -1,0 +1,74 @@
+
+body {
+    background-color: rgb(228, 220, 170);
+}
+
+h1 {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+table th {
+    background-color: yellow;
+}
+
+table tr {
+    background-color: white;
+}
+
+table tr:hover {
+    background-color: lightblue;
+}
+
+.kembali {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.kembali:hover {
+    cursor: pointer;
+    background-color: rgb(4, 101, 98);
+}
+
+.hapus {
+    background-color: rgb(73, 154, 194);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.hapus:hover {
+    cursor: pointer;
+    background-color: darkred;
+	color: white;
+}
+
+.center{
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
